@@ -25,10 +25,29 @@
 
 /* --------------HEADER-------------- */
 
-.header {}
-.header-nav {}
+.header {
+height: 72px;
+}
+
+.container{
+     width: 1128px;   
+     margin: 0 auto;
+     padding-left: 15px;
+     padding-right: 15px;
+}
+
+.header-block{
+    display: flex;
+}
+
+
+.header-nav {
+     display: flex; 
+    align-items: center;
+}
 
 .header-logo {
+    display: flex;
 font-family: 'Raleway' , sans-serif;
 font-weight: 800;
 font-size: 18px;
@@ -44,11 +63,20 @@ color: var(--button-web-color);
 }
 
 .header-list {
+display: flex;
+margin-left: 72px;
+padding-left: 0;
 list-style-type:none;
 
 }
 
-.header-item {}
+.header-item {
+    margin-right: 40px;
+}
+
+.header-item:last-child {
+    margin-right: 0;
+}
 
 .header-link {
 text-decoration: none;
@@ -68,15 +96,27 @@ color:var(--big-text) ;
 }
 
 .header-address{
-font-style: normal;
+    display: flex;
+    font-style: normal;
 }
 
 .address-list {
-list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    margin-left: 332px;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .address-item {
+margin-right: 40px;
 
+}
+
+.address-item:last-child {
+    margin-right: 0;
 }
 
 .address-link{
@@ -96,17 +136,27 @@ color: var(--little-text);
 /* --------------EFFECTIVE-------------- */
 
 .effective {
-   background: var(--big-text);
+height: 600px;
+background: var(--big-text);
 }
 
 .effective-title {
+    display: block;
+    max-width: 496px;
+    margin: 0 auto 48px;
+    padding-top: 188px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--body-head-color);
 }
 
+
 .effective-btn {
+    display: block;
+    margin: 0 auto;
+    width: 169px;
+        height: 56px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     color: var(--body-head-color);
@@ -149,14 +199,25 @@ color: var(--little-text);
 }
 
 .opportunities-list {
-list-style-type: none;
+    display: flex;
+    margin: 0 ;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .opportunities-item {
-
+        margin-right: 22px;
 }
 
+ .opportunities-item:last-child {
+     margin-right: 0;
+ }
+
 .opportunities-subtitle {
+    margin: 0;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -164,7 +225,10 @@ list-style-type: none;
     color: var(--big-text);
 }
 
+
+
 .opportunities-text {
+    margin: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -177,6 +241,10 @@ list-style-type: none;
 }
 
 .solutions-title {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -186,6 +254,9 @@ list-style-type: none;
 }
 
 .solutions-list {
+display: flex;
+justify-content: space-between;
+padding-left: 0;
 list-style-type: none;
 }
 
