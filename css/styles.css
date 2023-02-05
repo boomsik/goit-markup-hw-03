@@ -7,6 +7,10 @@
 --color-nav-link:#404BBF;
 --color-bg-team: #F4F4FD;
 --color-text-footer: #E7E9FC;
+--color-border-one: rgba(0, 0, 0, 0.15);
+--color-border-two: rgba(46, 47, 66, 0.08);
+--color-border-three: rgba(46, 47, 66, 0.16);
+--color-border-four:rgba(46, 47, 66, 0.08);
  
 
 }
@@ -27,6 +31,9 @@
 
 .header {
 height: 72px;
+padding-top: 24px;
+padding-bottom: 24px;
+border-bottom: 1px solid #E7E9FC;
 }
 
 .container{
@@ -165,7 +172,7 @@ background: var(--big-text);
     line-height: 1.5;
     letter-spacing: 0.04em;
     background: var(--button-web-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px var(--color-border-one);
     border-radius: 4px;
 }
 
@@ -256,7 +263,9 @@ background: var(--big-text);
 .solutions-list {
 display: flex;
 justify-content: space-between;
+margin: 0;
 padding-left: 0;
+padding-bottom: 120px;
 list-style-type: none;
 }
 
@@ -273,6 +282,11 @@ background: var(--color-bg-team) ;
 }
 
 .team-title {
+    display: block;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 72px;
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
@@ -282,14 +296,30 @@ background: var(--color-bg-team) ;
 }
 
 .team-list {
+    display: flex;
+    margin: 0;
+    padding-bottom: 120px;
+    padding-left: 0;
+    justify-content: space-between;
  list-style-type: none;
 }
 
 .team-item {
+background-color: var(--body-head-color);
+box-shadow: 0px 1px 6px var(--color-border-two), 0px 1px 1px var(--color-border-three), 0px 2px 1px var(--color-border-four);
+border-radius: 0px 0px 4px 4px;
+}
 
+.team-img{
+    display: block;
 }
 
 .team-subtitle{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -298,6 +328,10 @@ background: var(--color-bg-team) ;
 }
 
 .team-text{
+    display: block;
+    margin: 0;
+    padding-bottom: 32px;
+    text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -308,9 +342,14 @@ background: var(--color-bg-team) ;
 
 .end{
     background: var(--big-text) ;
+    height: 310px;
 }
 
 .end-logo{
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 16px;
     font-family: 'Raleway' , sans-serif ;
     font-weight: 800;
     font-size: 18px;
@@ -324,6 +363,9 @@ background: var(--color-bg-team) ;
 
 
 .end-text{
+    
+    margin: 0;
+    width: 264px;
     color: var(--color-text-footer);
     font-size: 16px;
     line-height: 1.5;
@@ -334,17 +376,32 @@ background: var(--color-bg-team) ;
 
  /* --------------CHOICE-------------- */
 
-.choice {}
+.choice {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 .choice-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
     list-style-type: none;
 }
 
-.choice-item {}
+.choice-item {
+    padding-left: 24px ;
+}
+
+.choice-item:first-child{
+    padding-left: 0;
+}
 
 .choice-btn {
     font-family: 'Roboto', sans-serif;
     background: var(--color-bg-team);
+    width: 116px;
+    height: 48px;
     border: 1px solid var(--color-text-footer);
     border-radius: 4px;
     font-weight: 500;
@@ -354,6 +411,7 @@ background: var(--color-bg-team) ;
     letter-spacing: 0.04em;
     color: var(--button-web-color);
     cursor: pointer;
+
 }
 
 .choice-btn:is(:hover,:focus){
@@ -362,18 +420,38 @@ background: var(--color-bg-team) ;
 }
 
 .choise-cards {
-list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 72px;
+    padding-left: 0;
+    list-style-type: none;
 }
 
 .choise-card {
-  
+  background: var(--body-head-color);
+    border: 1px solid #E7E9FC;
+    margin-bottom: 48px;
+
+}
+
+.choise-card:nth-last-child(-n + 3){
+    margin-bottom: 0;
 }
 
 .choise-link{
 text-decoration: none;
 }
 
+.choise-img{
+    display: block;
+}
+
 .choise-subtitle {
+    margin: 0;
+    padding-top: 32px;
+    padding-left: 16px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -382,6 +460,10 @@ text-decoration: none;
 }
 
 .choise-text {
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
