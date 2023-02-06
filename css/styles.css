@@ -322,14 +322,14 @@ border-radius: 0px 0px 4px 4px;
 
 .team-img{
     display: block;
+    margin-bottom: 32px;
 }
 
 .team-subtitle{
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
