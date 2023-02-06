@@ -381,7 +381,7 @@ border-radius: 0px 0px 4px 4px;
     letter-spacing: 0.02em;
 }
 
- /* --------------PORTFOLIO-------------- */
+                    /* --------------PORTFOLIO-------------- */
 
  /* --------------CHOICE-------------- */
 
@@ -399,18 +399,17 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .choice-item {
-    padding-left: 24px ;
+    margin-left: 24px ;
 }
 
 .choice-item:first-child{
-    padding-left: 0;
+    margin-left: 0;
 }
 
 .choice-btn {
+    padding: 12px 24px;
     font-family: 'Roboto', sans-serif;
     background: var(--color-bg-team);
-    width: 116px;
-    height: 48px;
     border: 1px solid var(--color-text-footer);
     border-radius: 4px;
     font-weight: 500;
@@ -420,29 +419,36 @@ border-radius: 0px 0px 4px 4px;
     letter-spacing: 0.04em;
     color: var(--button-web-color);
     cursor: pointer;
+    border: none;
 
 }
 
 .choice-btn:is(:hover,:focus){
     background: var(--color-nav-link);
     color: var(--body-head-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 
 .choise-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 0;
-    padding-top: 72px;
+    margin-top: 72px;
     padding-left: 0;
     list-style-type: none;
 }
 
 .choise-card {
-  background: var(--body-head-color);
-    border: 1px solid #E7E9FC;
+    background: var(--body-head-color);
     margin-bottom: 48px;
+    margin-right: 24px;
 
+}
+
+.choise-card:nth-child(3n) {
+    margin-right: 0;
 }
 
 .choise-card:nth-last-child(-n + 3){
@@ -457,10 +463,18 @@ text-decoration: none;
     display: block;
 }
 
+.choise-container{
+    padding-left: 16px;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    border: 1px solid var(--color-text-footer);
+    border-top: none;
+}
+
+
 .choise-subtitle {
     margin: 0;
-    padding-top: 32px;
-    padding-left: 16px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -470,9 +484,6 @@ text-decoration: none;
 
 .choise-text {
     margin: 0;
-    padding-top: 8px;
-    padding-left: 16px;
-    padding-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
