@@ -105,7 +105,7 @@ color:var(--big-text) ;
 
 .header-address{
     display: flex;
-    margin-left: 332px;
+    margin-left: auto;
     font-style: normal;
 }
 
